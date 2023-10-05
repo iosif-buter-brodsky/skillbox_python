@@ -1,0 +1,5 @@
+a = float(input())
+p = round(a * 4, 2)
+s = round(a * a, 2)
+d = round(((a**2)*2)**0.5, 2)
+print(p, s, d)
