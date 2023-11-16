@@ -33,8 +33,8 @@ class Queue:
             self.start = None
             self.end = None
         else:
-            self.start = self.nref.start
-            self.nref.start = None
+            self.start = self.start.nref
+            self.start.nref = None
         return data
 
     def push(self, val):
